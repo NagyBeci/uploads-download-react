@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
   const [credentials, setCredentials] = useState({ username: '', password: '' });
   const [error, setError] = useState(false);
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -20,7 +20,7 @@ const Login = () => {
 
     // Hardcoded credentials
     if (username === 'asd' && password === 'asd') {
-      history.push('/transition'); // Navigate to TransitionPage
+      navigate('/transition'); // Navigate to TransitionPage
     } else {
       setError(true);
     }

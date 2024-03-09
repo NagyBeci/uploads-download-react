@@ -1,15 +1,15 @@
 import React from 'react';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const TransitionPage = () => {
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const handleUpload = () => {
-    history.push('/upload'); // Navigate to UploadPage
+    navigate('/upload'); // Navigate to UploadPage
   };
 
   const handleDownload = () => {
-    history.push('/download'); // Navigate to DownloadPage
+    navigate('/download'); // Navigate to DownloadPage
   };
 
   return (

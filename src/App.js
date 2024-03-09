@@ -1,20 +1,21 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Login from './components/Login';
 import TransitionPage from './components/TransitionPage';
-import UploadPage from './components/UploadPage'; // Import or define placeholder components for UploadPage
-import DownloadPage from './components/DownloadPage'; // Import or define placeholder components for DownloadPage
+import UploadPage from './components/UploadPage';
+import DownloadPage from './components/DownloadPage';
 
 function App() {
   return (
     <Router>
-      <Switch>
-        <Route path="/login" component={Login} />
-        <Route path="/transition" component={TransitionPage} />
-        <Route path="/upload" component={UploadPage} /> {/* Placeholder or actual component */}
-        <Route path="/download" component={DownloadPage} /> {/* Placeholder or actual component */}
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/transition" element={<TransitionPage />} />
+        <Route path="/upload" element={<UploadPage />} />
+        <Route path="/download" element={<DownloadPage />} />
         {/* Other routes */}
-      </Switch>
+      </Routes>
     </Router>
   );
 }
