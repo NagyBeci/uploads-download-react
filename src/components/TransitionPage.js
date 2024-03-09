@@ -1,5 +1,6 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import "./TransitionPage.css";
 
 const TransitionPage = () => {
   const navigate = useNavigate();
@@ -13,9 +14,13 @@ const TransitionPage = () => {
   };
 
   return (
-    <div>
-      <button onClick={handleUpload}>Upload</button>
-      <button onClick={handleDownload}>Download</button>
+    <div className="transition-page">
+      <button onClick={handleUpload} className="button">
+        Upload
+      </button>
+      <button onClick={handleDownload} className="button">
+        Download
+      </button>
     </div>
   );
 };
