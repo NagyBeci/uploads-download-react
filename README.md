@@ -1,29 +1,23 @@
+
 ```markdown
-# My React App
+# File Upload System
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/NagyBeci/uploads-download-react)
 ![GitHub issues](https://img.shields.io/github/issues/NagyBeci/uploads-download-react)
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/NagyBeci/uploads-download-react)
 
-This project is a file upload system built with React and Express. Users can select multiple files and upload them to a server.
+A simple and efficient file upload system built with React and Express.
 
 ## Features
 
-- File selection
-- Multiple file upload
+- Select and upload multiple files
 - Real-time upload status updates
 
-## Getting Started
-```
-npm start 
-npm server.js
-```
-
-To get a local copy up and running, follow these steps:
+## Quick Start
 
 1. Clone the repository:
    ```
-   git clone https://github.com/user/repo.git
+   git clone https://github.com/NagyBeci/uploads-download-react.git
    ```
 2. Install the dependencies:
    ```
@@ -33,30 +27,15 @@ To get a local copy up and running, follow these steps:
    ```
    npm start
    ```
-4. Open [http://localhost:3000](http://localhost:3000) to view the app in your browser.
-
-## Running Tests
-
-To launch the test runner in the interactive watch mode, run:
-```
-npm test
-```
-
-## Building for Production
-
-To build the app for production, run:
-```
-npm run build
-```
-This will build the app for production to the `build` folder. The build is minified and the filenames include the hashes.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## Contributing
 
-Contributions are welcome! For major changes, please open an issue first to discuss what you would like to change.
+Contributions are welcome! Please open an issue first if you want to make major changes.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+MIT
 ```
 
-Please replace `user` and `repo` in the badge URLs with your GitHub username and repository name.
+This version of the README is more concise and to the point, providing only the necessary information about the project.
