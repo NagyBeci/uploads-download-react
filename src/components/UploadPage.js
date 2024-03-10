@@ -16,10 +16,15 @@ const UploadPage = () => {
   };
 
   const handleUpload = () => {
-    if (selectedFiles) {
-      // Simulate an upload process
-      setUploadMessage(`Successfully selected ${selectedFiles.length} file(s) for upload.`);
+    if (selectedFiles && selectedFiles.length > 0) {
+      setUploadMessage(`Uploading ${selectedFiles.length} file(s)...`);
+      
       // Here, you would typically send the files to a backend server
+      // Simulate a server response with a timeout
+      setTimeout(() => {
+        setUploadMessage('Upload successful!');
+      }, 1500);
+
     } else {
       setUploadMessage('No files selected.');
     }
@@ -27,7 +32,7 @@ const UploadPage = () => {
 
   return (
     <div className="upload-container">
-      <button className="back-button" onClick={handleBack}>Back</button>
+      <button className="back-button" onClick={handleBack} aria-label="Go back to the transition page">Back</button>
       <div>
         <input id="file-input" className="file-input" type="file" multiple onChange={handleFileChange} />
         <label htmlFor="file-input" className="file-label">Choose Files</label>
