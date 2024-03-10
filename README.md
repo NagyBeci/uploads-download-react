@@ -5,6 +5,11 @@
 ![GitHub top language](https://img.shields.io/github/languages/top/NagyBeci/uploads-download-react)
 
 ```
+git clone https://github.com/NagyBeci/uploads-download-react.git
+```
+
+```
+npm install
 npm start
 npm server.js
 ```
@@ -28,19 +33,7 @@ A simple and efficient file upload system built with React and Express.
 
 ## Quick Start
 
-1. Clone the repository:
-   ```
-   git clone https://github.com/NagyBeci/uploads-download-react.git
-   ```
-2. Install the dependencies:
-   ```
-   npm install
-   ```
-3. Start the development server:
-   ```
-   npm start
-   ```
-4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+1. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## Contributing
 
