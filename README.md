@@ -7,6 +7,8 @@
 ```
 npm start
 npm server.js
+User: asd
+Password: asd
 ```
 
 Uploads can be found in src/uploads/
