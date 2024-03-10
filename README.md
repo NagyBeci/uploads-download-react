@@ -13,9 +13,9 @@ npm server.js
 User: asd
 Password: asd
 ```
-
+---
 Uploads can be found in src/uploads/
-
+---
 ```markdown
 # File Upload System
 
