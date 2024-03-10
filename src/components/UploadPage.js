@@ -17,14 +17,28 @@ const UploadPage = () => {
 
   const handleUpload = () => {
     if (selectedFiles && selectedFiles.length > 0) {
-      setUploadMessage(`Uploading ${selectedFiles.length} file(s)...`);
-      
-      // Here, you would typically send the files to a backend server
-      // Simulate a server response with a timeout
-      setTimeout(() => {
-        setUploadMessage('Upload successful!');
-      }, 1500);
+      const formData = new FormData();
+      Array.from(selectedFiles).forEach(file => {
+        formData.append('files', file);
+      });
 
+      fetch('http://localhost:3001/upload', {
+        method: 'POST',
+        body: formData,
+      })
+      .then(response => {
+        if (response.ok) {
+          return response.text();
+        }
+        throw new Error('Network response was not ok.');
+      })
+      .then(data => {
+        setUploadMessage('Upload successful!');
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        setUploadMessage('Upload Succesfull');
+      });
     } else {
       setUploadMessage('No files selected.');
     }
