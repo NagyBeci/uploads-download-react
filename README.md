@@ -1,6 +1,8 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/NagyBeci/uploads-download-react)
 ![GitHub issues](https://img.shields.io/github/issues/NagyBeci/uploads-download-react)
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/NagyBeci/uploads-download-react)
+![GitHub repo size](https://img.shields.io/github/repo-size/NagyBeci/uploads-download-react)
+![GitHub top language](https://img.shields.io/github/languages/top/NagyBeci/uploads-download-react)
 
 ```markdown
 # File Upload System
