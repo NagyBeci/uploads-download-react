@@ -4,6 +4,11 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/NagyBeci/uploads-download-react)
 ![GitHub top language](https://img.shields.io/github/languages/top/NagyBeci/uploads-download-react)
 
+npm start
+npm server.js
+
+Uploads can be found in src/uploads/
+
 ```markdown
 # File Upload System
 
