@@ -12,7 +12,7 @@ app.use(cors({
 }));
 
 // Define the absolute path to the uploads directory
-const uploadsDir = path.resolve('S:/Html Projects/Download and Upload Basic/uploads-download-react/src/uploads');
+const uploadsDir = path.join(__dirname, 'src/uploads');
 
 // Create the uploads directory if it doesn't exist
 if (!fs.existsSync(uploadsDir)) {
@@ -31,6 +31,21 @@ const upload = multer({ storage });
 app.post('/upload', upload.single('file'), (req, res) => {
   res.status(200).send({ message: 'File uploaded successfully', file: req.file });
 });
+
+// List files
+app.get('/list-files', (req, res) => {
+  fs.readdir(uploadsDir, (err, files) => {
+    if (err) {
+      console.error('Failed to list files:', err);
+      res.status(500).send('Failed to list files');
+      return;
+    }
+    res.json(files);
+  });
+});
+
+// Serve files from the uploads directory
+app.use('/uploads', express.static(path.join(__dirname, 'src/uploads')));
 
 // Additional error handling for Multer
 app.use((err, req, res, next) => {
