@@ -1,6 +1,6 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/NagyBeci/uploads-download-react)
 ![GitHub issues](https://img.shields.io/github/issues/NagyBeci/uploads-download-react)
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/NagyBeci/uploads-download-react/CI)
+![Build Status](https://github.com/NagyBeci/devops-capstone-project/actions/workflows/ci-build.yaml/badge.svg)
 ![GitHub repo size](https://img.shields.io/github/repo-size/NagyBeci/uploads-download-react)
 ![GitHub top language](https://img.shields.io/github/languages/top/NagyBeci/uploads-download-react)
 ```
