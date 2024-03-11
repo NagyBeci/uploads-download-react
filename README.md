@@ -2,6 +2,8 @@
 ![GitHub Repo Size](https://img.shields.io/github/repo-size/NagyBeci/uploads-download-react)
 ![GitHub Top Language](https://img.shields.io/github/languages/top/NagyBeci/uploads-download-react)
 
+---
+
 ```
 git clone https://github.com/NagyBeci/uploads-download-react.git
 ```
