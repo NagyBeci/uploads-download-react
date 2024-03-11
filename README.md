@@ -6,7 +6,10 @@
 
 ```
 npm start
-npm server.js
+```
+---
+```
+node server.js
 ```
 ---
 ```
